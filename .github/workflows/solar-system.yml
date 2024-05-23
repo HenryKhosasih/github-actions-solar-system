@@ -87,4 +87,4 @@ jobs:
             context: .
             file: ./Dockerfile
             push: true
-            tags: ghcr.io/henrykhosasih/solar-system:${{github.sha}} 
+            tags: ghcr.io/${{github.actor}}/solar-system:${{github.sha}} 
