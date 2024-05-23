@@ -82,7 +82,7 @@ jobs:
             username: ${{ github.repository_owner }}
             password: ${{ secrets.GITHUB_TOKEN }}
         - name: Build and Push Image to GHCR
-          uses: docker/build-push-action
+          uses: docker/build-push-action@v4
           with:
             context: .
             file: ./Dockerfile
